@@ -1,0 +1,296 @@
+<!doctype html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>feedback</title>
+		<link rel="shortcut icon" type="img/png" href="logos.png">
+
+	
+
+
+<form style="background-attachment: fixed;">
+<a>NAME</a>	<input class="names" type="TEXT" name="NAME">
+<br>
+<a>EMAIL</a>  <input class="email" type="text" name="email"><br>
+<br>
+<br> <a></a>
+<br>
+<input class="SUBMIT" type="submit" name="SUBMIT" value="submit" id="SUBMIT">
+<br>
+<a></a><input class="feed" type="text" name="feed" placeholder="YOUR FEEDBACK">
+<a class="hh">FEEDBACK</a>
+
+</form>
+
+
+
+
+
+
+	</head>
+	<body>
+	
+
+<div class="rating">
+	<input type="radio" id="star1" ><label for="star1"></label>
+	<input type="radio" id="star2" ><label for="star2"></label>
+	<input type="radio" id="star3" ><label for="star3"></label>
+	<input type="radio" id="star4" ><label for="star4"></label>
+	<input type="radio" id="star5" ><label for="star5"></label>
+
+
+
+
+
+</div>
+
+
+
+<style>
+	
+body{
+
+padding: 0;
+margin: 0;
+background: darkslategrey;
+
+}
+.rating input{
+
+	display: none;
+}
+
+
+.rating{
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+display: flex;
+
+
+}
+
+.rating label{
+display: block;
+cursor: pointer;
+width: 50px;
+padding-left: 10px;
+position: relative;
+top: -40px;
+right: 55px;
+}
+
+.rating label::before{
+
+content: '★';
+font-family: font awesome 5 free;
+font-weight: 900;
+position: relative;
+display: block;
+font-size: 50px;
+color: darkslategrey;
+
+}
+
+.rating label::after{
+
+content: '★';
+font-family: font awesome 5 free;
+font-weight: 900;
+font-size: 50px;
+position: absolute;
+top: 0;
+opacity: 0;
+display: block;
+color: white;
+transition: 0.5s;
+text-shadow: 0 2px 5px rgba(0, 0, 0,0.5);
+
+}
+.rating label:hover::after,
+.rating label:hover ~ label::after,
+.rating input:checked ~ label::after{
+
+opacity: 5;
+
+}
+<div class="continar">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+
+
+
+</div>
+
+<style>
+	
+
+body{
+
+background-color: darkslategray;
+background-size: contain;
+background-attachment: fixed;
+padding: 0;
+margin: 0;
+height: 100%;
+width: 100%;
+padding: 0;
+margin: 0;
+border: 5px solid burlywood ;
+height: 710px;
+width: 1525px;
+border-style: ridge;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+form{
+display: inline-block;
+border: 3px solid burlywood;
+background-color: burlywood;
+position:relative ;
+top: 10px;
+left: 500px;
+border-radius: 15px;
+width: 400px;
+height: 400px;
+background-attachment: fixed;
+background-size: contain;
+}
+
+
+
+.SUBMIT{
+
+position: relative;
+left: 172px;
+top: 245px;
+background-color:burlywood ;
+width: 60px;
+height: 40px;
+color: white;
+font-family: fantasy;
+}
+
+.SUBMIT:hover{
+
+position: relative;
+left: 172px;
+top: 245px;
+background-color:black ;
+width: 60px;
+height: 40px;
+}
+
+
+
+a {
+
+position: relative;
+top: 100px;
+left: 57px;
+font-family: fantasy;
+}
+
+.email{
+position: relative;
+top: 100px;
+left: 57px;
+border: 4px solid darkslategrey;
+
+}
+
+
+
+.names{
+
+position: relative;
+top: 98px;
+left: 58px;
+
+border: 4px solid darkslategrey;
+
+}
+
+
+.a1{
+position: relative;
+top: 116px;
+left: 58px;
+
+}
+.hh{
+
+position: relative;
+top: -220px;
+left: 155px;
+display: inline-block;
+
+
+}
+
+.feed{
+
+height: 120px;
+width: 350px;
+position: relative;
+left: 22px;
+top: 10px;
+border: 4px solid darkslategrey;
+font-size: large;
+font-weight: 600;
+
+
+}
+
+
+
+
+.checked {
+  color: orange;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+	</html>

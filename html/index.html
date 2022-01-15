@@ -1,0 +1,199 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>HOME</title>
+	<link rel="shortcut icon" type="image/png" href="page/logos.png">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<center><h2 style="color: burlywood;">.............. <span  class="spann" data-text="TODAY A READER, TOMORROW A LEADER"></span> </h2></center>
+
+
+
+
+</head>
+
+
+<body>
+
+<nav>
+	<ul>
+
+		<li><a href="page/history.html">HISTORY</li>
+		<li><a href="page/science.html">SCIENCE</li>
+		<li><a href="page/engineering.html">ENGINEERING</li>
+		<li><a href="page/medicine.html">MEDICINE</li>
+		<li><a href="page/computer.html">COMPUTER</li>
+	
+	</ul>
+
+</nav>
+
+<a href="page/rigstrstion.html">
+<button class="button">REGISTRATION</button>
+</a>
+
+
+<a href="page/login.html">
+<button class="button">LOGIN</button>
+</a>
+
+
+<a href="page/feedback1.html">
+<button class="button">FEEDBACK</button>
+</a>
+
+
+
+
+<style>
+body{
+padding: 0;
+margin: 0;
+border: 5px solid burlywood ;
+height: 710px;
+border-style: ridge;
+
+}
+
+.spann{
+font-size: 15px;
+-webkit-text-stroke: 0.1vw darkslategrey;
+
+}
+	
+.spann::before{
+
+content: attr(data-text);
+position: absolute;
+top: 10px;
+right: 20px;
+width: 0%;
+height: 70%;
+color: burlywood;
+-webkit-text-stroke: 0vw red;
+border-right: 0px solid green;
+overflow: hidden;
+animation: animate 6s linear infinite;
+
+}
+
+@keyframes animate{
+0%,10%,100%
+{
+    width: 0%;
+}
+70%,90%
+{
+
+    width: 100%;
+}
+
+}
+
+
+
+nav{
+
+width: 500px;
+text-align: right;
+background-size: 200px;
+font-size: 19px;
+
+}
+
+
+
+
+nav a{
+text-decoration: none;
+color: white;
+line-height: 100px;
+text-align: center;
+}
+
+
+
+
+
+ul{
+
+width: 300px;
+height: 300px;
+margin-top: 10px;
+text-decoration: none;
+}
+
+li{
+color: white;
+width: 1400px;
+height: 100px;
+display: block;
+text-decoration: none;
+padding: 10px 15px;
+background-size: 100px;
+background-color: darkslategrey;
+text-align: center;
+}
+
+nav a:hover{
+background-color: burlywood;
+background-size: 900px;
+display: block;
+color: black;
+text-align: center;
+
+}
+
+
+.button {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+position: relative;
+bottom: 380px;
+left: 10px;
+font-family: serif;
+}
+
+.button span {
+    color: black;
+    position: relative;
+    z-index: 1;
+    transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-radius: 3px;
+    transform: translate(-100%, -60%);
+    width: 100%;
+    height: 100%;
+    background-color: burlywood;
+    transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.button:hover span {
+    color: burlywood;
+}
+
+.button:hover::before {
+    transform: translate(0, -50%);
+}
+
+
+</style>
+
+
+
+
+
+</body>
+</html>
